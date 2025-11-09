@@ -14,8 +14,16 @@ class MonApplication extends StatelessWidget {
       title: 'Magazine Infos - Gestion des Rédacteurs',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFFE91E63),
+          primary: const Color(0xFFE91E63),
+        ),
         useMaterial3: true,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color(0xFFE91E63),
+          foregroundColor: Colors.white,
+          elevation: 0,
+        ),
       ),
       home: const RedacteurInterface(),
     );
